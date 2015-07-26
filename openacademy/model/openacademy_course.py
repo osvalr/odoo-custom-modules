@@ -1,7 +1,8 @@
 from openerp import fields, models
-'''
+
+"""
 This module create model for OpenAcademy Course
-'''
+"""
 
 
 class Course(models.Model):
