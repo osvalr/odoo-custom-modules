@@ -23,11 +23,11 @@
 
     # always loaded
     'data': [
-
+        "view/openacademy_course_view.xml"
     ],
 
     'demo': [
-
+        "demo/openacademy_course_demo.xml",
     ],
     'installable': True,
     'auto_install': False,
