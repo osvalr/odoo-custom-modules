@@ -13,7 +13,7 @@
 
     'author': "osvalr",
 
-    'website': "http://www.lacarcaza.com.ve",
+    'website': "vauxoo.com",
 
     'category': 'OpenAcademy',
     'version': '0.1',
@@ -23,7 +23,8 @@
 
     # always loaded
     'data': [
-        "view/openacademy_course_view.xml"
+        "view/openacademy_course_view.xml",
+        "view/openacademy_session_view.xml",
     ],
 
     'demo': [
