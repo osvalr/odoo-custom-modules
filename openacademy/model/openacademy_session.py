@@ -54,3 +54,9 @@ class Session(models.Model):
                     'message' : _("Increase seats or remove excess attendees"),
                 }
             }
+
+    @api.one
+    @api.constrains('instructor_id', 'attendee_ids')
+    def _check_instructor_not_in_attendees(self):
+        if self.instructor_id and self.instructor_id in self.attendee_ids:
+            raise exception.ValidationError(_("A session's instructor can't be an attendee"))

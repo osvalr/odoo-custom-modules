@@ -1,4 +1,4 @@
-from openerp import fields, models
+from openerp import exceptions, fields, models
 
 """
 This module create model for OpenAcademy Course
