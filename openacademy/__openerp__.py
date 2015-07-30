@@ -30,6 +30,7 @@
 
     'demo': [
         "demo/openacademy_course_demo.xml",
+        "demo/partner_demo.xml"
     ],
     'installable': True,
     'auto_install': False,
