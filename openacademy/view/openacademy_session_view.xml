@@ -8,14 +8,15 @@
                 <form string="Session Form">
                     <sheet>
                         <group string="General">
-                            <field name="course_id"></field>
-                            <field name="name"></field>
-                            <field name="instructor_id"></field>
+                            <field name="course_id"/>
+                            <field name="name"/>
+                            <field name="instructor_id"/>
                         </group>
                         <group string="Schedule">
-                            <field name="start_date"></field>
-                            <field name="duration"></field>
-                            <field name="seats"></field>
+                            <field name="start_date"/>
+                            <field name="duration"/>
+                            <field name="seats"/>
+                            <field name="taken_seats" widget="progressbar"/>
                         </group>
                         <label for='attendee_ids' />
                         <field name="attendee_ids" />
@@ -29,8 +30,9 @@
             <field name="model">openacademy.session</field>
             <field name="arch" type="xml">
                 <tree string="Session tree">
-                    <field name="name"></field>
-                    <field name="course_id"></field>
+                    <field name="name"/>
+                    <field name="course_id"/>
+                    <field name="taken_seats" widget="progressbar"/>
                 </tree>
             </field>
         </record>
