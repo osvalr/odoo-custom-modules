@@ -48,7 +48,7 @@ coverage.xml
 
 # Translations
 *.mo
-*.pot
+# *.pot #this is needed by Odoo for i18n templating
 
 # Django stuff:
 *.log
