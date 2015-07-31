@@ -93,7 +93,7 @@ class Session(models.Model):
          ('draft', "Draft"),
          ('confirmed', "Confirmed"),
          ('done', "Done"),
-    ], default='draft')
+    ]) # taken out @ Workflow non-achoc lesson: , default='draft'
 
     @api.one
     def action_draft(self):
