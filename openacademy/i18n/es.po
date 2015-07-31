@@ -90,18 +90,18 @@ msgstr "Contacts"
 #. module: openacademy
 #: field:openacademy.session,course_id:0
 msgid "Course"
-msgstr "Course"
+msgstr "Curso"
 
 #. module: openacademy
 #: view:openacademy.course:openacademy.course_form_view
 msgid "Course Form"
-msgstr "Course Form"
+msgstr "Formulario de Curso"
 
 #. module: openacademy
 #: model:ir.actions.act_window,name:openacademy.course_list_action
 #: model:ir.ui.menu,name:openacademy.courses_menu
 msgid "Courses"
-msgstr "Courses"
+msgstr "Cursos"
 
 #. module: openacademy
 #: field:openacademy.course,create_uid:0
@@ -121,7 +121,7 @@ msgstr "Created on"
 #: view:openacademy.course:openacademy.course_form_view
 #: field:openacademy.course,description:0
 msgid "Description"
-msgstr "Description"
+msgstr "Descripción"
 
 #. module: openacademy
 #: selection:openacademy.session,state:0
@@ -136,7 +136,7 @@ msgstr "Draft"
 #. module: openacademy
 #: field:openacademy.session,duration:0
 msgid "Duration"
-msgstr "Duration"
+msgstr "Duración"
 
 #. module: openacademy
 #: help:openacademy.session,duration:0
