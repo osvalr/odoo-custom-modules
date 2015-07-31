@@ -88,3 +88,21 @@ class Session(models.Model):
         start_date = fields.Datetime.from_string(self.start_date)
         end_date = fields.Datetime.from_string(self.end_date)
         self.duration = (end_date - start_date).days + 1
+
+    state = fields.Selection([
+         ('draft', "Draft"),
+         ('confirmed', "Confirmed"),
+         ('done', "Done"),
+    ], default='draft')
+
+    @api.one
+    def action_draft(self):
+        self.state = 'draft'
+
+    @api.one
+    def action_confirm(self):
+        self.state = 'confirmed'
+
+    @api.one
+    def action_done(self):
+        self.state = 'done'
