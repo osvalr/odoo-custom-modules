@@ -1,3 +1,4 @@
+from datetime import timedelta
 from openerp import _, api, fields, models
 
 """
@@ -11,6 +12,9 @@ class Session(models.Model):
     name = fields.Char(required=True)
 
     start_date = fields.Date(default=fields.Date.today)
+
+    end_date  = fields.Date(string="End Date", store=True,
+        compute='_get_end_date', inverse='_set_end_date' )
 
     duration = fields.Float(digits=(6, 2), help= "Duration in Days")
 
@@ -60,3 +64,27 @@ class Session(models.Model):
     def _check_instructor_not_in_attendees(self):
         if self.instructor_id and self.instructor_id in self.attendee_ids:
             raise exception.ValidationError(_("A session's instructor can't be an attendee"))
+
+    @api.one
+    @api.depends('start_date', 'duration')
+    def _get_end_date(self):
+        if not (self.start_date and self.duration):
+            self.end_date = self.start_date
+            return
+
+        # Add duration to start_date, but: Monday + 5 days = Saturday, so
+        # subtract one second to get on Friday instead
+        start = fields.Datetime.from_string(self.start_date)
+        duration = timedelta(days=self.duration, seconds=-1)
+        self.end_date = start + duration
+
+    @api.one
+    def _set_end_date(self):
+        if not (self.start_date and self.end_date):
+            return
+
+        # Compute the difference between dates, but: Friday - Monday = 4 days,
+        # so add one day to get 5 days instead
+        start_date = fields.Datetime.from_string(self.start_date)
+        end_date = fields.Datetime.from_string(self.end_date)
+        self.duration = (end_date - start_date).days + 1
