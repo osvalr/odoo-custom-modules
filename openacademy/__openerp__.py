@@ -29,6 +29,7 @@
         "view/openacademy_session_workflow.xml",
         "security/security.xml",
         "security/ir.model.access.csv",
+        "view/openacademy_wizard_view.xml",
     ],
 
     'demo': [
