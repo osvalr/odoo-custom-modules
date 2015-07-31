@@ -27,6 +27,8 @@
         "view/openacademy_session_view.xml",
         "view/partner.xml",
         "view/openacademy_session_workflow.xml",
+        "security/security.xml",
+        "security/ir.model.access.csv",
     ],
 
     'demo': [
