@@ -19,7 +19,7 @@
                             <field name="seats"/>
                             <field name="taken_seats" widget="progressbar"/>
                         </group>
-                        <label for='attendee_ids' />
+                        <label for='attendee_ids' class="oe_horizontal_separator" />
                         <field name="attendee_ids" />
                     </sheet>
                 </form>
