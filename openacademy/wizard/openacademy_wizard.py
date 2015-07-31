@@ -1,4 +1,4 @@
-from openerp import models, fields, api
+from openerp import _, api, fields, models
 
 class Wizard(models.TransientModel):
     _name = 'openacademy.wizard'
@@ -9,7 +9,7 @@ class Wizard(models.TransientModel):
     session_ids = fields.Many2many('openacademy.session',
         string="Sessions", required=True, default=_default_sessions)
 
-    attendee_ids = fields.Many2many('res.partner', string="Attendees")
+    attendee_ids = fields.Many2many('res.partner', string=_("Attendees"))
 
     @api.multi
     def subscribe(self):
