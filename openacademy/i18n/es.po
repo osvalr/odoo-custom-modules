@@ -17,10 +17,8 @@ msgstr ""
 
 #. module: openacademy
 #: model:ir.actions.act_window,help:openacademy.course_list_action
-msgid "<p class=\"oe_view_nocontent_create\"> Create the first course</p>\n"
-"            "
-msgstr "<p class=\"oe_view_nocontent_create\"> Crea el primer curso</p>\n"
-"            "
+msgid "<p class=\"oe_view_nocontent_create\"> Create the first course</p>\n            "
+msgstr "<p class=\"oe_view_nocontent_create\"> Crea el primer curso</p>\n            "
 
 #. module: openacademy
 #: code:addons/openacademy/model/openacademy_session.py:66
@@ -205,12 +203,12 @@ msgstr "Mark as done"
 #. module: openacademy
 #: view:openacademy.course:openacademy.course_search_view
 msgid "My Courses"
-msgstr "My Courses"
+msgstr "Mis cursos"
 
 #. module: openacademy
 #: field:openacademy.session,name:0
 msgid "Name"
-msgstr "Name"
+msgstr "Nombre"
 
 #. module: openacademy
 #: field:openacademy.session,seats:0
@@ -242,7 +240,7 @@ msgstr "Reset to draft"
 #: view:openacademy.course:openacademy.course_search_view
 #: field:openacademy.course,responsible_id:0
 msgid "Responsible"
-msgstr "Responsible"
+msgstr "Responsable"
 
 #. module: openacademy
 #: view:openacademy.session:openacademy.session_form_view
@@ -276,7 +274,7 @@ msgstr "Session tree"
 #: field:openacademy.wizard,session_ids:0
 #: view:res.partner:openacademy.partner_instructor_form_view
 msgid "Sessions"
-msgstr "Sessions"
+msgstr "Sesiones"
 
 #. module: openacademy
 #: field:openacademy.session,start_date:0
@@ -306,7 +304,7 @@ msgstr "Teacher / Level 2"
 #. module: openacademy
 #: sql_constraint:openacademy.course:0
 msgid "The course title must be unique"
-msgstr "The course title must be unique"
+msgstr "El título del curso debe ser único"
 
 #. module: openacademy
 #: code:addons/openacademy/model/openacademy_session.py:51
@@ -317,17 +315,17 @@ msgstr "The number of available seats may not be negative"
 #. module: openacademy
 #: sql_constraint:openacademy.course:0
 msgid "The title of the course should not be the description"
-msgstr "The title of the course should not be the description"
+msgstr "El título del curso no debe ser la descripción"
 
 #. module: openacademy
 #: view:openacademy.course:openacademy.course_form_view
 msgid "This is all About"
-msgstr "This is all About"
+msgstr "Esto es todo"
 
 #. module: openacademy
 #: field:openacademy.course,name:0
 msgid "Title"
-msgstr "Title"
+msgstr "Título"
 
 #. module: openacademy
 #: code:addons/openacademy/model/openacademy_session.py:57
@@ -338,5 +336,5 @@ msgstr "Too many attendess"
 #. module: openacademy
 #: view:openacademy.wizard:openacademy.wizard_form_view
 msgid "or"
-msgstr "or"
+msgstr "ó"
 
