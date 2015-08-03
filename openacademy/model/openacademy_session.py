@@ -34,6 +34,9 @@ class Session(models.Model):
 
     taken_seats = fields.Float(string=_("Taken seats"), compute="_taken_seats")
 
+    attendees_count = fields.Integer(
+        string="Attendees count", compute="_get_attendees_count", store=True)
+
     @api.one
     @api.depends('seats','attendee_ids')
     def _taken_seats(self):
@@ -106,3 +109,8 @@ class Session(models.Model):
     @api.one
     def action_done(self):
         self.state = 'done'
+
+    @api.one
+    @api.depends('attendee_ids')
+    def _get_attendees_count(self):
+        self.attendees_count = len(self.attendee_ids)
