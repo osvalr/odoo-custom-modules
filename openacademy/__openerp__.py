@@ -38,6 +38,9 @@
         "demo/openacademy_course_demo.xml",
         "demo/partner_demo.xml"
     ],
+    'test':[
+        'tests/openacademy_course.yml',
+    ],
     'installable': True,
     'auto_install': False,
 }
