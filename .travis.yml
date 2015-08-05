@@ -5,6 +5,8 @@ python:
 install:
   - pip install pylint
 
+script:
+  - pylint .
 notifications:
   email:
     recipients:
