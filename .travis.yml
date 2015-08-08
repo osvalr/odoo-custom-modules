@@ -1,0 +1,15 @@
+language: python
+python:
+  - "2.7"
+
+install:
+  - pip install pylint
+
+script:
+  - pylint .
+notifications:
+  email:
+    recipients:
+      - osval@vauxoo.com
+    on_success: change
+    on_failure: always
