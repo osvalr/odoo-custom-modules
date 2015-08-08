@@ -17,5 +17,9 @@ Can have multiple lines
             <field name="name">Course 2</field>
             <field name="description">Course 2 description</field>
         </record>
+        <record model="openacademy.course" id="openacademy_course_1">
+            <field name="name">Odoo Technical Course</field>
+            <field name="description">Here goes the description</field>
+        </record>
     </data>
 </openerp>

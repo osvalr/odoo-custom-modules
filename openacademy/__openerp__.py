@@ -40,6 +40,7 @@
     ],
     'test':[
         'tests/openacademy_course.yml',
+        'tests/openacademy_session.yml',
     ],
     'installable': True,
     'auto_install': False,
